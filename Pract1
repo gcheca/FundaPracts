@@ -1,0 +1,18 @@
+/**************************************
+* NOMBRE: #Nombre#
+* PRIMER APELLIDO: #Primer Apellido#
+* SEGUNDO APELLIDO: #Segundo Apellido#
+* DNI: #99999999#
+* EMAIL: #n.apellido@alumno.u.es#
+***************************************/
+
+#include <stdio.h>
+
+int main()
+{
+ printf("Nombre\n");
+ printf("Apellido1\n");
+ printf("Apellido2\n");
+ printf("00000000-X\n");
+ printf("napellido@alumno.u.es\n");
+}
