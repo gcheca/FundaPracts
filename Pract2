@@ -1,0 +1,87 @@
+#include <stdio.h>
+
+int main(){
+  int linea,posicion,lado;
+	printf("Introduzca el lado del rombo \n");
+	scanf("%d",&lado);
+	printf("\n");
+	if (lado>0 && lado<=20){
+		if (lado==1){
+			printf("@");
+
+			//Printamos el triangulo mediante refinamientos sucesivos
+		}else{
+				for (int linea=1;linea<=lado;linea++){
+					//Caracteres vacíos
+					for (int posicion=1;posicion<=lado-linea;posicion++){
+						printf(" ");
+					}
+					//Printamos la parte Izquierda Arriba
+					for (int posicion=1;posicion<=linea;posicion++){
+						if ((posicion-1)%4==0){
+							printf("@");
+						}else if ((posicion-1)%4==1){
+							printf(".");
+						}else if ((posicion-1)%4==2){
+							printf("o");
+						}else {
+							printf(".");
+						}
+					}
+					//Printamos la parte Derecha Arriba
+					for (int posicion=1;posicion<=linea;posicion++){
+						if (posicion==linea){
+							printf("\n");
+						}else {
+							if ((linea-(posicion+1))%4==0){
+								printf("@");
+							}else if ((linea-(posicion+1))%4==1){
+								printf(".");
+							}else if ((linea-(posicion+1))%4==2){
+								printf("o");
+							}else {
+								printf(".");
+							}
+						}
+					}
+
+				}
+
+				for (int linea=lado-1;linea>=1;linea--){
+					//Caracteres vacíos
+					for (int posicion=1;posicion<=lado-linea;posicion++){
+						printf(" ");
+					}
+					//Printamos la parte Izquierda Abajo
+					for (int posicion=1;posicion<=linea;posicion++){
+						if ((posicion-1)%4==0){
+							printf("@");
+						}else if ((posicion-1)%4==1){
+							printf(".");
+						}else if ((posicion-1)%4==2){
+							printf("o");
+						}else {
+							printf(".");
+						}
+					}
+					//Printamos la parte Derecha Abajo
+					for (int posicion=1;posicion<=linea;posicion++){
+						if (posicion==linea){
+							printf("\n");
+						}else {
+							if ((linea-(posicion+1))%4==0){
+								printf("@");
+							}else if ((linea-(posicion+1))%4==1){
+								printf(".");
+							}else if ((linea-(posicion+1))%4==2){
+								printf("o");
+							}else {
+								printf(".");
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}
