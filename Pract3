@@ -4,9 +4,9 @@ typedef enum TipoDia{	//Creamos un nuevo tipo de dato con los dias de la semana
 };
 /*Procedimiento que lee el mes y el anno*/
 void LeerFecha(int & mes, int & anno){	//mes y anno son pasados por referencia
-  printf("¿Mes (1..12)?");
+  printf("\250Mes (1..12)?");
   scanf("%d",&mes);
-  printf("¿Año (1601..3000)?");
+  printf("\250A\xA4o (1601..3000)?");
   scanf("%d",&anno);
 }
 /*Funcion para calcular el numero de bisiestos*/
