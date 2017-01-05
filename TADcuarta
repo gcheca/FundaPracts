@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <string.h>
+
+typedef * HoraReserva;
+typedef * DiaReserva [12];
+typedef char PersonaReserva [21];
+typedef struct (mes, dia, reserva)
+
+void NuevaReserva ()
+{
+  printf("Nueva Reserva: \n");
+  printf("Persona que reserva (Maximo 20 caracteres)?");
+  scanf("%s %s \n", Nombre, Apellido);
+  printf("Dia?");
+  scanf("%d \n", &diareserva);
+  printf("");
+  printf("");
+  printf("");
+  printf("");
+
+}
+
+void AnulaReserva ()
+{
+
+}
+
+void ReservasDia ()
+{
+
+}
+
+void ReservasMes ()
+{
+
+}
+
+int main ()
+{
+  bool seguir;
+  char tecla = ' ';
+
+  seguir=true;
+  while(seguir)
+  {
+    printf("Gestión de Reservas Sala \n");
+    printf("      Nueva Reserva         (Pulsar N) \n");
+    printf("      Anular Reserva        (Pulsar A) \n");
+    printf("      Reservas de un Día    (Pulsar D) \n");
+    printf("      Reservas de un Mes    (Pulsar M) \n");
+    printf("      Salir                 (Pulsar S) \n");
+    printf("Teclear una opción válida (N|A|D|M|S)\n");
+    scanf("%c", &tecla);
+
+  //También podría hacer un if-else if-else como pag 209 libre. Puede ser más sencillo (pagina 259)
+  case tecla == ('N'||'n'):  //Con el nombre de variable y == o no? DUDA.
+  do
+  {
+
+  }
+  break;
+    case ('A'||'a'):
+  do
+  {
+
+  }
+  break;
+    case ('D'||'d'):
+  do
+  {
+
+  }
+  break;
+    case ('M'||'m'):
+  do
+  {
+
+  }
+  break;
+
+    case ('S'||'s'):
+    seguir=false;
+  break;
+
+    default:
+    printf("VALOR ERRONEO");
+    break;
+
+}
